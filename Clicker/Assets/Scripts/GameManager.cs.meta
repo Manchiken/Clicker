@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e4129ea0b341cfd47ab7be58b1dc9b78
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - blabla: {fileID: 1252204372050402621, guid: 9e3bed2a958d3ae438806e9201bcc467,
+      type: 3}
+  - ring: {fileID: 2822889146898677801, guid: 749e339a4cb8d714a879af98fe053360, type: 3}
+  - laser: {fileID: 2236065979402117357, guid: ba623e63680176842af1026ec2706204, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
