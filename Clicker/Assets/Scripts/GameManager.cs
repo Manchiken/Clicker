@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,8 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Ring ring;
     [SerializeField] private Laser laser;
     [SerializeField] private GameObject _winPanel;
-    [SerializeField] private Text _winText;
-    [SerializeField] private Text _scores;
+    [SerializeField] private TextMeshProUGUI _winText;
+    [SerializeField] private TextMeshProUGUI _scores;
 
 
     public bool hit;
@@ -108,7 +109,7 @@ public class GameManager : MonoBehaviour
     {
         _winPanel.SetActive(true);
         _winText.text = "GAME OVER";
-        _scores.text = "You Scores: " + scores;
+        _scores.text = "Scores: " + scores;
         _frezee = true;
     }
 
@@ -176,6 +177,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void QuitGame()
+    {
+        Debug.Log("QUIT!!");
+        Application.Quit();
+    }
+    
     [UsedImplicitly]
     public void RestartGame()
     {
